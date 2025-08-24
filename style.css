@@ -2,7 +2,7 @@
     --primary-bg: #E6CEAC;       
     --primary-dark: #C4A97D;     
     --primary-light: #F5E6D0;    
-    --blue: #0072B1;             /* LinkedIn blue */
+    --blue: #0072B1;             
     --skyblue: #00b4fc;          
     --text-dark: #333;           
     --text-light: #fff;          
@@ -22,13 +22,15 @@ body{
     color: var(--text-dark);
 }
 
-/* Header */
+.hero-header, header, .wrapper{
+    background-color: var(--primary-bg);
+}
+
 header{
     display: flex;
     justify-content: space-between;
     align-items:center;
     padding: 15px 50px;
-    background-color: var(--primary-bg);
 }
 
 /* Logo */
@@ -69,25 +71,21 @@ nav .navlinks li a.active{
 }
 
 .hero-text .social i {
-    color: var(--blue);        /* LinkedIn color */
-    font-size: 30px;
+    color: var(--blue);        /* Icon color */
+    font-size: 30px;           /* Bigger size */
     margin-right: 10px;
     transition: 0.5s;
 }
 
 .hero-text .social i:hover {
-    color: var(--skyblue);
+    color: var(--skyblue);     /* Hover color */
     transform: rotate(360deg);
 }
 
-/* Buttons */
 .btn-group .btn{
     color: var(--text-light);
     background-color: var(--primary-dark);
     border: 2px solid var(--text-dark);
-    border-radius: 30px;
-    padding: 12px 25px;
-    margin: 5px;
 }
 
 .btn-group .btn:hover{
@@ -104,8 +102,6 @@ nav .navlinks li a.active{
 
 .portfolio-container h1{
     color: var(--blue);
-    text-align: center;
-    margin-bottom: 40px;
 }
 
 .portfolio-grid {
@@ -124,7 +120,7 @@ nav .navlinks li a.active{
 
 .project-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
 }
 
 .project-box h3{
@@ -141,7 +137,6 @@ nav .navlinks li a.active{
 
 .project-box a:hover{
     color: var(--blue);
-    text-decoration: underline;
 }
 
 /* Resume */
@@ -156,7 +151,6 @@ nav .navlinks li a.active{
     color: var(--blue);
     border-left: 5px solid var(--skyblue);
     padding-left: 10px;
-    margin-bottom: 20px;
 }
 
 .resume-card{
@@ -165,12 +159,6 @@ nav .navlinks li a.active{
     margin-bottom: 20px;
     border-radius: 12px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.05);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.resume-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
 }
 
 .resume-card h3{
@@ -184,8 +172,6 @@ nav .navlinks li a.active{
 .skills-card span{
     background: var(--primary-dark);
     color: var(--text-light);
-    padding: 8px 14px;
-    border-radius: 20px;
 }
 
 /* Blog */
@@ -198,8 +184,6 @@ nav .navlinks li a.active{
 .blog-post{
     background: var(--primary-light);
     color: var(--text-dark);
-    padding: 20px;
-    border-radius: 12px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.05);
 }
 
@@ -213,9 +197,4 @@ nav .navlinks li a.active{
 
 .read-more:hover{
     color: var(--blue);
-}
-
-/* Override any old hero/header background */
-.hero-header, .wrapper {
-    background-color: var(--primary-bg) !important;
 }
