@@ -37,8 +37,8 @@ body{
 
 /* Wrapper */
 .wrapper{
-    width: 95%;
-    max-width: 95%;
+    width: 90%;
+    max-width: 1200px;
     margin:0 auto;
     padding: 0 20px;
 }
@@ -124,7 +124,7 @@ nav .navlinks li a{
 }
 
 .hero-text{
-    max-width: 1000px;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,17 +132,17 @@ nav .navlinks li a{
 
 .hero-text h5{
     color: #cccbcb;
-    font-size: 16px;
+    font-size: 25px;
 }
 
 .hero-text h5 span{
     color: #007ced;
-    font-size: 1.5rem; 
+    font-size: 2rem; 
 }
 
 .hero-text h1{
     color: #007ced;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .hero-text p{
