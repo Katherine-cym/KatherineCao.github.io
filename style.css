@@ -22,10 +22,6 @@ body{
     color: var(--text-dark);
 }
 
-.hero-header, header, .wrapper{
-    background-color: var(--primary-bg);
-}
-
 header{
     display: flex;
     justify-content: space-between;
@@ -114,13 +110,13 @@ nav .navlinks li a.active{
     background: var(--primary-light);
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05); /* lighter shadow */
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* lighter hover shadow */
 }
 
 .project-box h3{
@@ -158,7 +154,7 @@ nav .navlinks li a.active{
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 12px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05); /* lighter shadow */
 }
 
 .resume-card h3{
@@ -184,7 +180,7 @@ nav .navlinks li a.active{
 .blog-post{
     background: var(--primary-light);
     color: var(--text-dark);
-    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05); /* lighter shadow */
 }
 
 .blog-post h2{
