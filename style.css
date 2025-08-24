@@ -76,7 +76,7 @@ header{
 .logo .logo-text{
     font-size: 24px;
     font-weight: 500;
-    color: #fff;
+    color: #222;
 }
 
 /* Navigation links */
@@ -156,12 +156,12 @@ nav .navlinks li a{
 }
 
 .btn-group .btn{
-    color: #fff;
+    color: #222;
     background-color: #E6CEAC;
     padding: 12px 25px;
     margin: 5px 0px 5px 7px;
     border-radius: 30px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid #222;
     box-shadow: 0 10px 10px -8px rgba(0,0,0,0.78);
     transition: 0.3s;
 }
@@ -192,12 +192,135 @@ nav .navlinks li a{
   background: var(--purple-light); /* stays dark for contrast */
 }
 
+.portfolio-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.portfolio-container h1{
+    color: var(--blue);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-box {
+    background: var(--primary-light);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.08);
+}
+
+.project-box h3{
+    color: var(--blue);
+}
+
+.project-box p{
+    color: var(--text-dark);
+}
+
+.project-box a{
+    color: var(--skyblue);
+}
+
+.project-box a:hover{
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+
 /* Resume Background remains same */
 .resume-card {
   background: #fff; /* keep contrast */
 }
+.resume-container{
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px;
+    color: var(--text-dark);
+}
+
+.resume-section h2{
+    color: var(--blue);
+    border-left: 5px solid var(--skyblue);
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.resume-card{
+    background: var(--primary-light);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resume-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+.resume-card h3{
+    color: var(--blue);
+}
+
+.resume-card p, .resume-card ul li{
+    color: var(--text-dark);
+}
+
+.skills-card span{
+    background: var(--primary-dark);
+    color: var(--text-light);
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+
 
 /* Blog Background remains same */
 .blog-post {
   background: #fff; /* keep contrast */
+}
+
+.blog-container{
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.blog-post{
+    background: var(--primary-light);
+    color: var(--text-dark);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.blog-post h2{
+    color: var(--blue);
+}
+
+.read-more{
+    color: var(--skyblue);
+}
+
+.read-more:hover{
+    color: var(--blue);
+}
+
+/* Override any old hero/header background */
+.hero-header, .wrapper {
+    background-color: var(--primary-bg) !important;
 }
